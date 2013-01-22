@@ -1,0 +1,12 @@
+h2 Sureaudio Screenings
+- if @screenings.present?
+  table
+    thead
+      th ID
+      th Client Name
+      th DOB
+    - @screenings.each do |scr|
+      tr
+        td = scr.id
+        td = scr.client_name
+        td = scr.client_dob
