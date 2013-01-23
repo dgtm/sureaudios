@@ -10,4 +10,5 @@ source 'https://rubygems.org'
   gem 'json'
   gem 'activerecord'
   gem "sinatra-activerecord"
-  gem "sqlite3"
+  gem "pg"
+  # gem 'activerecord-postgres-adapter'
