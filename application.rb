@@ -14,7 +14,7 @@ class Audio < Sinatra::Base
   dbfile = File.expand_path('../screen.sqlite3', __FILE__)
 
   # set :database, "sqlite3:///#{dbfile}"
-  set :database, {adapter: "postgresql", database: "screen"}
+  set :database, {adapter: "postgresql", database: "dacj6mbjmmajvd"}
   set :app_file, __FILE__
   set :root, File.dirname(__FILE__)
   set :views, "views"
