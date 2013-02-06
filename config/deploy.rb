@@ -69,6 +69,6 @@ namespace :deploy do
   end
 
   task :start, :roles => :web do
-    run "cd #{current_path}; #{rails_env} bundle exec unicorn -c config/unicorn.rb -D"
+    run "cd #{current_path}; bundle exec unicorn -c config/unicorn.rb -D"
   end
 end
