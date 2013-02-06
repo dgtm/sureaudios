@@ -58,6 +58,8 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     raindrops (0.10.0)
+    rvm-capistrano (1.2.7)
+      capistrano (>= 2.0.0)
     sass (3.2.5)
     shotgun (0.9)
       rack (>= 1.0)
@@ -96,6 +98,7 @@ DEPENDENCIES
   json
   pg
   pry
+  rvm-capistrano
   shotgun
   sinatra
   sinatra-activerecord

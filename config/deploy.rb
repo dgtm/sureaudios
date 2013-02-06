@@ -1,4 +1,7 @@
 require "rvm/capistrano"
+require 'bundler/setup'
+require 'bundler/capistrano'
+
 set :application, "sureaudios"
 set :repository,  "git@github.com:dgtm/sureaudios.git"
 set :scm, :git
@@ -27,9 +30,11 @@ role :db,  "192.168.33.10", :primary => true # This is where Rails migrations wi
 
 
 set :user, "deploy"
+set :password, "kathmandu09"
+
 set :use_sudo, false
 
-set :rvm_ruby_string, '1.9.3-p194'
+set :rvm_ruby_string, '1.9.3-p374'
 set :rvm_type, :system
 
 ssh_options[:forward_agent] = true
