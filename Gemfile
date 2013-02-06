@@ -12,5 +12,7 @@ source 'https://rubygems.org'
   gem "sinatra-activerecord"
   gem "pg"
   gem 'capistrano'
+  gem 'rvm-capistrano'
+
   gem 'unicorn'
   # gem 'activerecord-postgres-adapter'
