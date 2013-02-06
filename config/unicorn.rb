@@ -24,7 +24,7 @@ timeout 180
 
 # Listen on a Unix data socket
 # Since we are using front-end webserver and unicorn on same machine, listening socket will be more upto performance.
-listen "0.0.0.0:4000", :backlog => 128
+listen "/tmp/unicorn.sock", :backlog => 128
 
 before_exec do |server|
   ENV['BUNDLE_GEMFILE'] = "#{app_path}/Gemfile"
