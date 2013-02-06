@@ -60,7 +60,9 @@ namespace :deploy do
   
   task :restart, :roles => :web do
     # we don't want to fail if we can't find the pid so we append '; true'
-    stop && start
+          run "kill -USR2 `cat #{current_path}/tmp/pids/unicorn.pid`; true"
+
+    # stop && start
   end
 
   task :stop, :roles => :web do
