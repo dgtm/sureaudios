@@ -10,7 +10,7 @@ source 'https://rubygems.org'
   gem 'json'
   gem 'activerecord'
   gem "sinatra-activerecord"
-  gem "pg"
+  # gem "pg"
   gem 'capistrano'
   gem 'rvm-capistrano'
 
