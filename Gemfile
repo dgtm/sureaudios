@@ -14,6 +14,6 @@ source 'https://rubygems.org'
   # gem "pg"
   gem 'capistrano'
   gem 'rvm-capistrano'
-
+  gem "sqlite3"
   gem 'unicorn'
   # gem 'activerecord-postgres-adapter'
